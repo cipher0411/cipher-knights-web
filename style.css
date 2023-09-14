@@ -73,10 +73,10 @@ a {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.8); /* Transparent background with opacity */
   padding: 10px;
-  min-width: 200px;
+  min-width: 150px;
   border-radius: 5px; /* Add rounded corners */
 }
 
@@ -113,14 +113,15 @@ a:hover .sub-menu {
 
 /* heading write-up */
 .content{
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px 10px;
   text-align: center;
-  color: white;
+  color: #f0f0f0;
 }
 
 .btn{
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: bold;
   background: #007bff;
   width: 130px;
@@ -266,7 +267,7 @@ a:hover .sub-menu {
 
 .btn1{
   font-family: sans-serif;
-  font-size: 13 px;
+  font-size: 15px;
   font-weight: bold;
   background: #007bff;
   width: 130px;
@@ -347,7 +348,6 @@ a:hover .sub-menu {
 }
 .motivationh3{
   text-align: center;
-  font-style: italic;
   font-size: 1.2rem;
 }
 
@@ -722,6 +722,7 @@ footer {
   padding: 20px;
   display: flex;
   align-items: center;
+  align-items: center;
 }
 
 .numbered-writeup {
@@ -734,6 +735,7 @@ footer {
   max-width: 50%; /* Reduced image width */
   height: auto;
   margin-left: 20px;
+  align-items: center;
 }
 
 
@@ -1160,72 +1162,105 @@ p {
 /* end of retail */
 
 
-
-.technolog-main{
+.tech-main {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.2); /* Transparent background with opacity */
-  font-family: Arial, sans-serif;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-.technology {
+.flex-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
-  transition: background-color 0.3s ease;
+  align-items: center;
 }
-
-.technology:hover {
-  background-color: rgba(255, 255, 255, 1); /* Fully opaque white on hover */
-}
-
-.technology1 {
-  flex-direction: row-reverse;
-}
-
-.technology2 {
-  flex-direction: row;
-}
-
-.technology3 {
-  flex-direction: column;
-  gap: 20px;
-}
-
-.layout {
+.flex-column-tech{
   display: flex;
-  gap: 20px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
-  transition: background-color 0.3s ease;
+  gap: 10px;
 }
 
-.layout:hover {
-  background-color: rgba(255, 255, 255, 1); /* Fully opaque white on hover */
+.tech {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.technology4 {
-  background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
-  padding: 20px;
-  transition: background-color 0.3s ease;
+.tech h2 {
+  font-size: 24px;
 }
 
-.technology4:hover {
-  background-color: rgba(255, 255, 255, 1); /* Fully opaque white on hover */
+/* First Part - Hover Images */
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Adjust styles for text and images as needed */
-img {
+.image-card {
+  position: relative;
+  width: 200px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.image-card img {
   max-width: 100%;
-  height: auto;
+}
+
+.image-card:hover {
+  transform: translateY(-10px);
+}
+
+.image-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Second Part - Side Image and Text */
+.side-section {
+  display: flex;
+  align-items: center;
+}
+
+.side-section img {
+  max-width: 100%;
+}
+
+.side-text {
+  margin-left: 20px;
+}
+
+/* Third Part - Write-up and Icons */
+.tech-icon {
+  text-align: center;
+}
+
+.tech-icon p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.tech-icon i {
+  font-size: 36px;
+  margin: 10px;
+  color: #007bff; /* Change color as needed */
 }
 
 /* @media (max-width: 600px){
