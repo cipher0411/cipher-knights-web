@@ -75,14 +75,14 @@ a {
   top: 100%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8); /* Transparent background with opacity */
-  padding: 13px;
+  padding: 20px;
   min-width: 150px;
   border-radius: 5px; /* Add rounded corners */
 }
 
 .sub-menu li {
   display: block;
-  margin: 20px 0;
+  margin: 27px 0;
 }
 
 /* Show sub-menu on hover */
