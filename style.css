@@ -73,9 +73,9 @@ a {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.8); /* Transparent background with opacity */
-  padding: 10px;
+  padding: 13px;
   min-width: 150px;
   border-radius: 5px; /* Add rounded corners */
 }
