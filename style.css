@@ -321,7 +321,7 @@ a:hover .sub-menu {
 .color-box {
   width: 100%;
   max-width: 100%;
-  background-color: #FF5733;
+  background-color: darkgray;
   height: 55vh;
   display: flex;
   flex-direction: column;
@@ -335,7 +335,7 @@ a:hover .sub-menu {
 
 .icon {
   color: blue;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .text-before-hover,
